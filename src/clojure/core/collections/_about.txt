@@ -1,0 +1,5 @@
+https://medium.com/@greg_63957/conj-cons-concat-oh-my-1398a2981eab
+
+https://hypirion.com/musings/understanding-persistent-vector-pt-1
+
+https://purelyfunctional.tv/guide/clojure-collections/

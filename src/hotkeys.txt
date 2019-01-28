@@ -1,0 +1,90 @@
+search for an Action:
+	cmd+shift+A
+
+switch to current NS:
+    opt+shift+R
+
+sync file:
+    opt+shift+M
+
+load file:
+    opt+shift+L
+
+exec cur function:
+    opt+shift+P
+
+jump to editor:
+   cmd+\
+
+show macro expansion
+   shift + cmd + \
+
+REPL:
+ near the debug button - print the last thrown exception
+
+Debugging:
+  option + click -> evaluates selected fragment of code
+
+  shift + cmd +F8 -> show breakpoints, can be used to stop when exception is thrown
+
+ alt+ins -> ctrl+R
+
+---------------
+Enabling and disabling structural editing
+Structural editing comes enabled for Clojure code by default. If you don’t like it,
+you can turn it off at Settings→Editor→General→Smart Keys→Use structural editing.
+If you’d like to toggle it on and off quickly, you can use the widget in the status
+bar at the bottom of the screen, or you can use the Edit→Structural
+Editing→Toggle Structural Editing action. If you find yourself doing that a lot you can
+even assign a shortcut key to the action.
+
+ -- https://shaunlebron.github.io/parinfer/
+Tab - indent lines
+Shift+Tab dedent lines
+
+
+---------------
+Read documentation through REPL
+(doc ns/method)
+
+
+---------------
+opt+cmd+J - move brackets one operator back
+opt+cmd+K - move brackets one operator forward
+opt+S     - move up
+opt+R     - move out from inner brackets
+
+opt+shit+K - move bracket in (1 to 2)
+
+1) (->)
+   (defn just-method
+     [my]
+     (do println my))
+
+ After:
+
+2) (->
+     (defn just-method
+       [my]
+       (do println my)))
+
+
+opt+shit+K - move bracket out (2 to 1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
