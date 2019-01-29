@@ -1,0 +1,8 @@
+ - Var:   Isolated changes within a thread
+ - Atom:  Shared + synchronous + autonomous
+ - Agent: Shared + asynchronous + autonomous
+ - Ref:   Shared + asynchronous + coordinated
+
+- Sharing: Can changes be seen by more that one thread?
+- Synchronicity: Does it happen now or some time later?
+- Coordination: Do multiple changes happen atomically?

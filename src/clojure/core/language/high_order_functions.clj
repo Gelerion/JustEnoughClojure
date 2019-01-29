@@ -1,4 +1,6 @@
-(ns clojure.core.language.high-order-functions)
+(ns clojure.core.language.high-order-functions
+  (:require [clojure.core.collections.lazy-sequences :refer
+             [vampire-related-details vampire?]]))
 
 ; ---- functions
 
@@ -47,7 +49,6 @@
 (warn "Red Light Alert")
 
 ; -- complement
-
 (defn identify-humans
   [social-security-numbers]
   (filter #(not (vampire? %))
