@@ -30,6 +30,16 @@
 (def names
   ["Denis" "Andrew" "Rafael"])
 
+; validations
+(def thingy 17)
+(set-validator! (var thingy) #(not= %1 16))
+
+(binding [thingy 20] (println thingy))
+(binding [thingy 16] (println thingy))
+
+; clears it
+(set-validator! (var thingy) nil)
+
 ; keywords - primarily used as keys in maps,
 ; can be used as functions that look up the corresponding value in a data structure
 (:a {:a 1 :b 2 :c 3})
