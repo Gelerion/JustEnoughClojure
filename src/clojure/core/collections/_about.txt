@@ -3,3 +3,10 @@ https://medium.com/@greg_63957/conj-cons-concat-oh-my-1398a2981eab
 https://hypirion.com/musings/understanding-persistent-vector-pt-1
 
 https://purelyfunctional.tv/guide/clojure-collections/
+
+; Maps/Vectors
+Maps, vectors, and sets are implemented in Clojure by Hash Array Mapped Tries using a 32-way branching factor.
+Lookups are based on tree traversal, which has time complexity O(log n). However, these Clojure data structures
+use a 32-way branching factor, so the actual lookup time is O(log32 n). Practically speaking, most maps
+require no more than two to three levels, and a map with a billion entries requires only six. Because this
+function grows so slowly we call lookups on these data structures effectively constant.

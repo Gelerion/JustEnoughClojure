@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/core.async "0.4.490"]
-                 [vvvvalvalval/scope-capture "0.3.2"]]
+                 [vvvvalvalval/scope-capture "0.3.2"]
+                 [prismatic/schema "1.1.10"]]
   :main ^:skip-aot clojure.core.main
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
