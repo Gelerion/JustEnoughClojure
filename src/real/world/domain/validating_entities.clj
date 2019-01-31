@@ -1,4 +1,5 @@
 (ns real.world.domain.validating-entities
+  (:gen-class)
   (:require [schema.core :as schema]))
 ;https://github.com/plumatic/schema
 

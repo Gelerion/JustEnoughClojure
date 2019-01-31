@@ -1,4 +1,5 @@
-(ns real.world.domain.constructing-entities)
+(ns real.world.domain.constructing-entities
+  (:gen-class))
 
 ; It’s useful to have a naming convention for constructor functions across your project. The Clojure community
 ; has no standard naming convention for constructors, but some of the most common constructor prefixes
@@ -99,7 +100,7 @@
   (let [{:keys [cm-name                                     ; command module
                 lm-name                                     ; lunar module
                 orbits
-                evas]} :or {:orbits 0 :evas 0} opts]
+                evas] :or {orbits 0 evas 0}} opts]
     (str "stub")))
 
 (def apollo-11 (make-mission-varargs

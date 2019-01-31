@@ -11,7 +11,6 @@
 ;
 ; Nesting simply means including another entity directly under a parent entity. Nesting is an easy choice
 ; when the nested entity is part of the parent entity and will follow its life cycle.
-
 (defrecord Recipe [name author description])
 (defrecord Person [first-name last-name])
 
